@@ -50,5 +50,20 @@ class Employee(Person):
         self.job = job  
 
 
-person1 = Employee('Emily', 'Johnson', 'Software Engineer', 'TechCorp', 435879)
-print(person1)
+def displayEmployees(employees):
+    if(len(employees) == 0):
+        print("No employees detected...")
+        return
+    for employee in employees :
+        print(employee)
+
+
+employees = [
+    Employee('Emily', 'Johnson', 'Software Engineer', 'TechCorp', 435879),
+    Employee('James', 'Smith', 'Data Analyst', 'DataWorks', 389500),
+    Employee('Sophia', 'Brown', 'Product Manager', 'InnoTech', 512000),
+    Employee('Michael', 'Davis', 'Cybersecurity Specialist', 'SecureNet', 470000),
+    Employee('Olivia', 'Wilson', 'UI/UX Designer', 'CreativeHub', 398000)
+]
+
+displayEmployees(employees)
