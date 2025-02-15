@@ -12,6 +12,9 @@ def divide(x, y):
         raise ValueError("Cannot divide by zero!")
     return x / y
 
+def power(x, y):
+    return x ** y
+
 if __name__ == "__main__":
     print("Welcome to the Calculator!")
     print("Select operation:")
