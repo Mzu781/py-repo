@@ -29,6 +29,7 @@ if __name__ == "__main__":
 
     if choice == '1':
         print(f"Result: {add(num1, num2)}")
+        print(cal.power(add(num1,num2),2))
     elif choice == '2':
         print(f"Result: {subtract(num1, num2)}")
     elif choice == '3':
