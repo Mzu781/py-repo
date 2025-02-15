@@ -1,3 +1,5 @@
+import cal
+
 def add(x, y):
     return x + y
 
@@ -11,9 +13,6 @@ def divide(x, y):
     if y == 0:
         raise ValueError("Cannot divide by zero!")
     return x / y
-
-def power(x, y):
-    return x ** y
 
 if __name__ == "__main__":
     print("Welcome to the Calculator!")
