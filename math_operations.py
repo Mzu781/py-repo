@@ -22,12 +22,11 @@ def multiply(a, b):
 
 def divide(a, b):
     if not is_valid(a, b):
-        print("Both a and b must be numbers.")
-        return None
+        raise ValueError("Both a and b must be numbers.")  
     if b == 0:
-        print("Cannot divide by zero.")
-        return None
+        raise ZeroDivisionError("Cannot divide by zero.") 
     return a / b
+
 
 def exponentiate(a, b):
     if not is_valid(a, b):
